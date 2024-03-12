@@ -2,7 +2,7 @@ name: Label Commenter
 
 on:
   issues:
-    types: [ labeled ]
+    types: [labeled]
 
 permissions:
   contents: read
@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   comment:
-    if: github.repository_owner == 'krmahadevan'
+    # if: github.repository_owner == 'krmahadevan'
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
